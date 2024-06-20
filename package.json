@@ -1,0 +1,17 @@
+{
+  "name": "admin-portal-styles",
+  "version": "1.0.0",
+  "description": "CSS styles for the admin portal",
+  "main": "setVariables.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "admin",
+    "portal",
+    "styles"
+  ],
+  "author": "Your Name",
+  "license": "ISC"
+}

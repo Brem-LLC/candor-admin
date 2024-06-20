@@ -1,0 +1,133 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: var(--border-radius);
+  background: #ffffff;
+
+  & th,
+  td {
+    padding: 10px;
+    white-space: nowrap;
+    text-align: left;
+    & a {
+      text-decoration: none;
+    }
+  }
+
+  .checklist-name {
+    display: flex;
+    align-items: center;
+    & a {
+      display: flex;
+      align-items: center;
+    }
+    & img:first-of-type {
+      margin-left: 10px;
+    }
+  }
+
+  & th {
+    font-weight: bold;
+  }
+
+  & tr {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  & tr:last-of-type {
+    border-bottom: unset;
+  }
+
+  & .user-images {
+    display: flex;
+    align-items: center;
+    height: 55px;
+
+    & img:last-of-type {
+      margin-right: 15px;
+    }
+
+    & img:first-of-type {
+      margin-left: 0;
+    }
+
+    & img {
+      margin-left: -10px;
+      border-radius: 30px;
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      object-position: center;
+      border: 2px solid var(--secondary-color);
+    }
+  }
+}
+
+.time-zone {
+  margin-left: 10px;
+}
+.destroy-action {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  table {
+    overflow-x: auto;
+  }
+}
+
+.inline-due-date {
+  padding: 10px;
+  white-space: nowrap;
+  text-align: left;
+  display: flex;
+
+  & input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  input[type="email"],
+  input[type="search"],
+  input[type="password"] {
+    display: block;
+    width: unset;
+    padding: unset;
+    height: unset;
+    font-size: unset;
+    border: unset;
+    border-radius: unset;
+    border-radius: unset;
+    margin-right: 10px;
+  }
+
+  & input[type="submit"] {
+    display: block;
+    width: unset;
+    padding: 3px 7px;
+    font-size: unset;
+    font-weight: bold;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+  }
+  & .ss-main,
+  select {
+    display: block;
+    width: 100%;
+    padding: 3px 7px;
+    min-height: unset;
+    font-size: unset;
+    border: unset;
+    border-radius: unset;
+    border-radius: unset;
+  }
+
+  & .ss-main:focus,
+  select:focus {
+    border: unset;
+    outline: none;
+  }
+}

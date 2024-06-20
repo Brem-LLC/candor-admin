@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #213158;
+  --primary-darker-color: #1a2540;
+  --secondary-color: #8cc3ea;
+  --secondary-darker-color: #4795be;
+  --danger-color: darkred;
+  --green-color: green;
+  --border-radius: 3px;
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --box-shadow-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
